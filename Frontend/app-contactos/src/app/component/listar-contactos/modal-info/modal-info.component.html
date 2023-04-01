@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{infoContact.nombre}} {{infoContact.apellidos}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">(+57) {{infoContact.celular}}</h6>
+                    <h6 href="#" ><strong>Email:</strong> {{infoContact.email}}</h6>
+                    <h6 href="#" ><strong>Origen:</strong> {{infoContact.origen}}</h6>
+                    <h6 href="#" ><strong>Direccción:</strong> {{infoContact.direcccion}}</h6>
+                    <h6 href="#" ><strong>Fecha De Nacimiento:</strong> {{infoContact.fechaNacimiento | date:'dd/MM/yyyy'}}</h6>
+                    <a type="button" href="/" class="btn btn-outline-primary card-link">Back</a>                    
+                </div>
+                <div class="card-footer text-muted">
+                    <strong>Fecha de Creación:</strong> {{infoContact.fechaCreacion | date:'dd/MM/yyyy'}}
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

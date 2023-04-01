@@ -1,0 +1,94 @@
+<!-- 
+<nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand">Contacto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/list-contact">
+                    <i class='bx bx-user nav-icon'></i>
+                    <br>
+                    <span>Contactos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class='bx bx-task nav-icon'></i>
+              <br>
+              <span>Tareas</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class='bx bx-message-square-detail nav-icon'></i>
+                <br>
+                <span>Comentarios</span>
+            </a>
+        </li>
+    </ul>
+      </div>      
+    </div>
+  </nav>
+  <div class="container">
+    <form class="d-flex mb-3">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    <router-outlet></router-outlet>
+  </div> -->
+  <nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Contactos</span>
+    </div>
+  </nav>
+  <div class="posicion"> 
+     <!--<nav class=" container d-flex ms-auto shadow-lg rounded-pill">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/list-contact">
+                    <i class='bx bx-user nav-icon'></i>
+                    <br>
+                    <span>Contactos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class='bx bx-task nav-icon'></i>
+              <br>
+              <span>Tareas</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class='bx bx-message-square-detail nav-icon'></i>
+                <br>
+                <span>Comentarios</span>
+            </a>
+        </li>
+    </ul>
+</nav> -->
+<input type="checkbox" id="btn-mas">
+<div class="opciones">
+    <a routerLink="/list-contact" class="icon">
+        <i class="fa fa-user nav-icon" aria-hidden="true"></i>
+    </a>
+    <a routerLink="/create-contact" class="icon">
+        <i class="fa fa-user-plus nav-icon" aria-hidden="true"></i>
+    </a>
+</div>
+<div class="btn-mas">
+    <label for="btn-mas"><i class="fa fa-angle-up" aria-hidden="true"></i></label>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+
+

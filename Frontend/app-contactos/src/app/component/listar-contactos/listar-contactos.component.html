@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let contacto of listContacto">
+            <div class="card mb-3 shadow-lg p-3 mb-1 bg-body rounded" style="max-width: 540px;">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title fw-3">{{contacto.nombre}} {{contacto.apellidos}}</h5>
+                            <p class="card-text">(+57) {{contacto.celular}}</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a [routerLink]="['/editar-contact', contacto._id]"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></a>
+                        &nbsp;
+                        <a [routerLink]="['/viewContact', contacto._id]"><i class="fa fa-eye text-secondary"
+                                aria-hidden="true"></i></a>
+                        &nbsp;
+                        <a href=""><i class="fa fa-trash text-danger" (click)="eliminarContacto(contacto._id)"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3
+            style="text-align: center; margin-top: 10px"
+            *ngIf="listContacto.length == 0"
+          >
+            NO HAY CONTACTO CREADO
+          </h3>
+    </div>
+</div>
